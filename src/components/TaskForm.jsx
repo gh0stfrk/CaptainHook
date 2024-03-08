@@ -28,7 +28,10 @@ function TaskForm(){
             resources: resources,
         }
 
-        fetch("http://localhost:8080/task", {
+        const base = "https://fastjwt.onrender.com"
+
+
+        fetch( base+"/task", {
             method: "POST",
             headers: {
                 'Content-Type':'application/json',

@@ -12,7 +12,10 @@ function SignUp() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    fetch("http://localhost:8080/auth/signup", {
+    const base = "https://fastjwt.onrender.com"
+
+
+    fetch( base+"/auth/signup", {
       method:"POST",
       headers:{
         "Content-Type":"application/json"
